@@ -94,11 +94,11 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
 
-  --color-brand-background: var(--brand-bg-background);
-  --color-brand-text-primary: var(--brand-primary);
-  --color-brand-text-secondary: var(--brand-secondary);
-  --color-brand-text-accent: var(--brand-accent);
-  --color-brand-text-dark: var(--brand-dark);
+  --color-brand-background: var(--brand-background);
+  --color-brand-primary: var(--brand-primary);
+  --color-brand-secondary: var(--brand-secondary);
+  --color-brand-accent: var(--brand-accent);
+  --color-brand-dark: var(--brand-dark);
 
   --color-purple-100: var(--brand-purple-100);
   --color-purple-200: var(--brand-purple-200);

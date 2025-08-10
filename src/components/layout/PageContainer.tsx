@@ -1,10 +1,10 @@
-import { cn } from "@/lib/utils"
 import { cva, VariantProps } from "class-variance-authority"
+import { cn } from "@/lib/utils"
 
-const pageContainerVariants = cva("mx-auto w-full max-w-[744px] h-screen flex-col", {
+const PageContainerVariants = cva("mx-auto flex flex-col w-full max-w-[744px] h-auto ", {
   variants: {
     bg: {
-      main: "bg-brand-bg-main",
+      main: "bg-background",
     },
   },
   defaultVariants: {
@@ -12,11 +12,11 @@ const pageContainerVariants = cva("mx-auto w-full max-w-[744px] h-screen flex-co
   },
 })
 
-type PageContainerProps = VariantProps<typeof pageContainerVariants> &
+type PageContainerProps = VariantProps<typeof PageContainerVariants> &
   React.HTMLAttributes<HTMLDivElement>
 
 const PageContainer = ({ className, bg, ...props }: PageContainerProps) => {
-  return <div {...props} className={cn(pageContainerVariants({ bg }), className)}></div>
+  return <div {...props} className={cn(PageContainerVariants({ bg }), className)}></div>
 }
 
 export default PageContainer
