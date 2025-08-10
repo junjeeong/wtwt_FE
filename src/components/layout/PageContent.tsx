@@ -1,7 +1,7 @@
 import { cva, VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
-const PageContentVariants = cva("w-full h-auto", {
+const PageContentVariants = cva("w-full h-full", {
   variants: {
     bg: {
       main: "bg-brand-background",

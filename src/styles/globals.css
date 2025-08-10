@@ -7,7 +7,7 @@
 
 :root {
   /* 프로젝트 base style */
-  --brand-background: #f7f5ff;
+  --brand-background: #f8f5ff;
   --brand-primary: #6a42db;
   --brand-secondary: #8b8fa3;
   --brand-accent: #e2d9ff;
@@ -22,7 +22,7 @@
   --brand-purple-800: #432a90;
   --brand-purple-900: #2f1e6b;
 
-  --background: oklch(1 0 0);
+  --background: #e5e5e5;
   --foreground: oklch(0.145 0 0);
   --radius: 0.625rem;
   --card: oklch(1 0 0);
@@ -157,5 +157,9 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+  }
+
+  button {
+    cursor: pointer;
   }
 }
