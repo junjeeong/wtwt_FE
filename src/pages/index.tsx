@@ -10,7 +10,7 @@ export default function Home() {
 
   const handleClick = async () => {
     const res = await conversationApi.startConversation()
-    if (res.success) router.push("/conversation/${conversationId}")
+    if (res.success) router.push("/conversation/${conversationId}?page=1")
   }
 
   return (

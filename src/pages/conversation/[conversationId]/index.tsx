@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { useRouter } from "next/router"
+import ChatInput from "@/components/common/input/ChatInput"
 import Logo from "@/components/common/Logo"
 import TagList from "@/components/common/TagList"
 import PageContainer from "@/components/layout/PageContainer"
@@ -10,7 +11,7 @@ import { QUESTIONS } from "@/constants/questions"
 function Conversations() {
   const router = useRouter()
   const { page } = router.query
-  const questionInfo = QUESTIONS[Number(page ?? 1)]
+  const questionInfo = QUESTIONS[Number(page ?? 1) - 1]
 
   return (
     <PageContainer>
@@ -28,6 +29,7 @@ function Conversations() {
         <div className="absolute -right-15 bottom-10">
           <Image src="/images/dog.png" alt="강아지 캐릭터" width={400} height={400} />
         </div>
+        <ChatInput className="absolute bottom-0" />
       </PageContent>
     </PageContainer>
   )
