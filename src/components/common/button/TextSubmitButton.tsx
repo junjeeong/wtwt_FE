@@ -3,6 +3,7 @@ import Image from "next/image"
 function TextSubmitButton({ onClick }: { onClick: () => void }) {
   return (
     <button
+      type="submit"
       className="bg-brand-primary hover:bg-brand-primary/90 flex size-10 items-center justify-around rounded-full"
       onClick={onClick}
     >

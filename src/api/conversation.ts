@@ -14,8 +14,32 @@ export const conversationApi = {
     })
     return response.json() as Promise<StartConversationResponse>
   },
+  postConversationAnswer: async (conversationId: number, answers: Answer[]) => {
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_API_URL}/conversations/${conversationId}/answers`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ answers }),
+      },
+    )
+    return response.json() as Promise<PostConversationAnswerResponse>
+  },
 }
 
 type StartConversationResponse = BaseApiResponse & {
   conversationId: number
+}
+
+type Answer = {
+  questionId: number
+  answer: string
+}
+
+type PostConversationAnswerResponse = {
+  success: boolean
+  message?: string
+  error?: string
 }
