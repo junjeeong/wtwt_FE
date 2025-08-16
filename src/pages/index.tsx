@@ -1,9 +1,9 @@
 import Image from "next/image"
 import { useRouter } from "next/router"
 import { conversationApi } from "@/api/conversation"
-import PageContainer from "@/components/layout/PageContainer"
-import PageContent from "@/components/layout/PageContent"
 import { Button } from "@/components/ui/button"
+import PageContainer from "@/components/ui/PageContainer"
+import PageContent from "@/components/ui/PageContent"
 
 export default function Home() {
   const router = useRouter()
