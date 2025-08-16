@@ -3,9 +3,9 @@ import { useRouter } from "next/router"
 import ChatInput from "@/components/common/input/ChatInput"
 import Logo from "@/components/common/Logo"
 import TagList from "@/components/common/TagList"
-import PageContainer from "@/components/layout/PageContainer"
-import PageContent from "@/components/layout/PageContent"
-import PageHeader from "@/components/layout/PageHeader"
+import PageContainer from "@/components/ui/PageContainer"
+import PageContent from "@/components/ui/PageContent"
+import PageHeader from "@/components/ui/PageHeader"
 import { QUESTIONS } from "@/constants/questions"
 
 function Conversations() {

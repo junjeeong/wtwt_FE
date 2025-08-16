@@ -9,6 +9,7 @@
   /* 프로젝트 base style */
   --brand-background: #f8f5ff;
   --brand-primary: #6a42db;
+  --brand-primary-bright: #9966ff;
   --brand-secondary: #8b8fa3;
   --brand-accent: #e2d9ff;
   --brand-dark: #2b2e4a;
@@ -96,6 +97,7 @@
 
   --color-brand-background: var(--brand-background);
   --color-brand-primary: var(--brand-primary);
+  --color-brand-primary-bright: var(--brand-primary-bright);
   --color-brand-secondary: var(--brand-secondary);
   --color-brand-accent: var(--brand-accent);
   --color-brand-dark: var(--brand-dark);

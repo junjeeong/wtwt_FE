@@ -1,17 +1,14 @@
 import Image from "next/image"
-import Logo from "@/components/common/Logo"
-import PageContainer from "@/components/layout/PageContainer"
-import PageContent from "@/components/layout/PageContent"
-import PageHeader from "@/components/layout/PageHeader"
+import Header from "@/components/layout/Header"
 import MovieCarousel from "@/components/MovieCarousel"
+import PageContainer from "@/components/ui/PageContainer"
+import PageContent from "@/components/ui/PageContent"
 import { MOCK_POSTERS } from "@/mocks/posters"
 
 function index() {
   return (
     <PageContainer>
-      <PageHeader>
-        <Logo />
-      </PageHeader>
+      <Header />
       <PageContent className="relative">
         <h2 className="mt-6 text-center text-2xl font-bold">
           자! 네가 좋아할만한 영화를 가져와봤어
